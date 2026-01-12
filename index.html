@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Runner | Elite Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <a href="../../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <h1 class="game-title">Maze <span class="gradient-text">Runner</span></h1>
+        </header>
+
+        <div class="game-interface glass-card">
+            <div class="sidebar">
+                <div class="status-panel">
+                    <div class="status-item">
+                        <span class="label">Lives</span>
+                        <div class="lives-container" id="lives-display">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <div class="status-item">
+                        <span class="label">Level</span>
+                        <span class="value" id="level-display">Easy</span>
+                    </div>
+                </div>
+
+                <div class="controls-panel">
+                    <h3>Difficulty</h3>
+                    <div class="btn-group">
+                        <button class="btn btn-sm active" onclick="setDifficulty(1)">Easy</button>
+                        <button class="btn btn-sm" onclick="setDifficulty(2)">Medium</button>
+                        <button class="btn btn-sm" onclick="setDifficulty(3)">Hard</button>
+                    </div>
+
+                    <div class="instructions">
+                        <p><i class="fas fa-arrows-alt"></i> Use <strong>Arrow Keys</strong> or <strong>WASD</strong> to
+                            move.</p>
+                        <p><i class="fas fa-exclamation-triangle"></i> Avoid walls! 4 hits = Game Over.</p>
+                        <p><i class="fas fa-flag-checkered"></i> Reach the <strong>Green Zone</strong> to win.</p>
+                    </div>
+
+                    <button class="btn btn-primary btn-block" onclick="resetGame()">Restart Game</button>
+                </div>
+            </div>
+
+            <div class="canvas-wrapper">
+                <canvas id="mazeCanvas"></canvas>
+                <div id="overlay" class="game-overlay hidden">
+                    <div class="overlay-content">
+                        <h2 id="overlay-title">Game Over</h2>
+                        <p id="overlay-message">You hit too many walls!</p>
+                        <button class="btn btn-primary" onclick="resetGame()">Try Again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
