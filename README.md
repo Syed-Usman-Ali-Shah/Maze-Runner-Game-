@@ -176,7 +176,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 **Syed Usman Ali Shah**
 - GitHub: [syedusmanshah055@gmail.com](https://github.com/Syed-Usman-Ali-Shah)
-- LinkedIn: [Your Name](https://www.linkedin.com/in/syed-usman-ali-shah-497129361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+- LinkedIn:(https://www.linkedin.com/in/syed-usman-ali-shah-497129361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 ## 🙏 Acknowledgments
 
@@ -200,11 +200,6 @@ Made with ❤️ and C++
 
 ---
 
-## **ADDITIONAL FILES BANAYEN:**
-
-### **1. LICENSE File (MIT License):**
-```
-MIT License
 
 Copyright (c) 2025 Syed-Usman-Ali-Shah
 
